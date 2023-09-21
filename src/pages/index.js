@@ -1,9 +1,10 @@
-import SocialMedia from "@/components/socialMedia/SocialMedia"
+import Perfil from "../containers/Perfil/Perfil"
 
 export default function Home() {
   return (
     <>
-      <SocialMedia theme={"dark"} language={"en"}/>
+    
+      <Perfil theme={"dark"} language={"en"}/>
     </>
   )
 }

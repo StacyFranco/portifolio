@@ -1,0 +1,12 @@
+.PerfilAvatarDiv{
+    .ImageAvatarDiv{
+        position: relative;
+        width: 10vh;
+        height: 10vh;
+        
+        .Avatar{
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
