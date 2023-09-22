@@ -1,3 +1,12 @@
+@import "../../public/fonts/fonts.scss";
+@import "./variables.scss";
+@import "../components/socialMedia/SocialMedia.scss";
+@import "../components/perfilAvatar/PerfilAvatar.scss";
+@import "../containers/Perfil/Perfil.scss";
+
+
 :root{
   color-scheme: dark ;//light;
+  font-family: $fontRegular;
 }
+

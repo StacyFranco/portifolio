@@ -1,0 +1,31 @@
+.light{
+    --background-color: #00ffff;
+    --text-color: #fff;
+  }
+
+  .dark{
+    --background-color1: #2c2c38;
+    --background-color2: #23232e;
+    --background-color3: #20202a;
+    --background-color4: #191923;
+    --background-color5:#1e1e28;
+    --text-color1: #fafafc;
+    --text-color2: #8c8c8e;
+    --color1: #FFC107;
+   // --color2: #fafafa ;
+  }
+
+
+$backgroundColor1: var(--background-color1);
+$backgroundColor2: var(--background-color2);
+$backgroundColor3: var(--background-color3);
+$backgroundColor4: var(--background-color4);
+$backgroundColor5: var(--background-color5);
+$textColor1 :var(--text-color1);
+$textColor2 :var(--text-color2);
+$color1 :var(--text-color);
+//$color2 :var(--text-color);
+$fontLight: 'Poppins Light';
+$fontRegular: 'Poppins Regular';
+$fontBold: 'Poppins Bold';
+$desktopBreakpoint:992px;
