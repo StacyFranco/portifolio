@@ -7,6 +7,7 @@
 const PersonalInfo = {
     firstName: "Stacy",
     lastName: "B. Franco",
+    age: "31",
     //Put the name of the image with the extension in the avatarPath and Save your image on the paste: /public/images/
     avatarPath: "linkdin_3.jpg" ,
     title: {
@@ -14,7 +15,15 @@ const PersonalInfo = {
         pt: ["Programador Full Stack","Desenvolvedor Web"],
     },
     resumeLink:"",
+    resumeName:{
+        en: "Resume",
+        pt: "Currículo"
+    },
     adress: "Piraquara, PR",
+    country: {
+        en: "Brazil",
+        pt: "Brasil"
+    },
     copyright: {
         en: "© 2023 Stacy Franco.  All Rights Reserved",
         pt: "© 2023 Stacy Franco.  Todos os direitos Reservados"

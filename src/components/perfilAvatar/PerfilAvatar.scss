@@ -1,12 +1,22 @@
 .PerfilAvatarDiv{
+    height: 150px;
+    background-color: $backgroundColor2;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    
+
     .ImageAvatarDiv{
         position: relative;
-        width: 10vh;
-        height: 10vh;
+        width: 130px;
+        height: 130px;
+        margin: auto;
         
+            
         .Avatar{
             object-fit: cover;
             border-radius: 50%;
+            
         }
     }
 }

@@ -1,3 +1,27 @@
-.socialMediaDiv{
-   
+.socialMediaDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $backgroundColor2;
+    padding: 10px 0;
+    margin-top: auto;
+    bottom: 0;
+    position: sticky;
+    bottom: 0px;
+
+    a {
+
+        .mediaIcon {
+            width: 20px;
+            height: 20px;
+
+            &:hover {
+                filter: brightness(0) saturate(100%) invert(75%) sepia(64%) saturate(1367%) hue-rotate(354deg) brightness(101%) contrast(101%);
+            }
+        }
+
+        .dark {
+            filter: invert(100%)
+        }
+    }
 }
