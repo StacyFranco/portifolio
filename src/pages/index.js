@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Perfil from "../containers/Perfil/Perfil"
+import SideMenu from "../containers/SideMenu/SideMenu";
 
 export default function Home() {
  
@@ -22,9 +23,10 @@ export default function Home() {
     }
   },[] )
   return (
-    <>
+    <div className="IndexDiv">
     
       <Perfil theme={CurrentTheme} language={"en"}/>
-    </>
+      <SideMenu theme={CurrentTheme}/>
+    </div>
   )
 }

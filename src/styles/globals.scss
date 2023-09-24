@@ -3,7 +3,10 @@
 @import "../components/socialMedia/SocialMedia.scss";
 @import "../components/perfilAvatar/PerfilAvatar.scss";
 @import "../containers/Perfil/Perfil.scss";
-
+@import "../pages/index.scss";
+@import "../components/navBar/NavBar.scss";
+@import "../containers/SideMenu/SideMenu.scss";
+@import "../components/ToggleButton/ToggleButton.scss";
 
 *{
   color-scheme: dark ;//light;
@@ -20,9 +23,7 @@ strong {
 }
 
 .desktop {
- // @media screen and (min-width: $desktopBreakpoint ) {
- //     display: block;
- // }
+ 
 
   @media screen and (max-width: calc($desktopBreakpoint - 1px)) {
       display: none;
@@ -34,7 +35,5 @@ strong {
       display: none;
   }
 
- // @media screen and (max-width: calc($desktopBreakpoint - 1px)) {
- //     display: block;
- // }
+ 
 }
