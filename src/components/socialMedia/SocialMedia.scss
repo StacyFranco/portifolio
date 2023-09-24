@@ -16,12 +16,12 @@
             height: 20px;
 
             &:hover {
-                filter: brightness(0) saturate(100%) invert(75%) sepia(64%) saturate(1367%) hue-rotate(354deg) brightness(101%) contrast(101%);
+                filter: $filterColor1;
             }
         }
 
         .dark {
-            filter: invert(100%)
+            filter: $filterDark;
         }
     }
 }
