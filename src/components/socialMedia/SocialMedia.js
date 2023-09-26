@@ -15,7 +15,7 @@ const mediaImages = {
         instagram: instagram,
 };
 
-export default function SocialMedia({theme, language}) {
+export default function SocialMedia({language}) {
     return (
         <div className="socialMediaDiv">
             {
@@ -26,7 +26,7 @@ export default function SocialMedia({theme, language}) {
                         <Image 
                         src={mediaImages[media]}
                         alt= {language ==="pt" ? `ícone do ${media}` : `icon of ${media}`} 
-                        className= {`mediaIcon ${theme}`} />
+                        className= {`mediaIcon`} />
                         
                     </a>
                 ))

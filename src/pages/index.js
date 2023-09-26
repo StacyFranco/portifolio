@@ -14,16 +14,16 @@ export default function Home() {
   const [ThemeChange, setThemeChange] = useState(false);
 
   useEffect(() => {
-    const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
+    /*const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
     const preferdTheme = (prefersDarkMode.matches === !true ? "dark" : "light");
     if (localStorage.getItem('theme') == null) {
       setCurrentTheme(preferdTheme);
       localStorage.setItem('theme', preferdTheme);
-    } else {
+    } else {*/
       const newTheme = (CurrentTheme === "light" ? "dark" : "light");
       localStorage.setItem('theme', newTheme)
       setCurrentTheme(newTheme)
-    }
+    //}
   }, [ThemeChange]);
 
   const ChangeLanguage = () => {
@@ -44,7 +44,7 @@ const ChangeTheme = () =>{
   return (
     <div className={`IndexDiv ${CurrentTheme}`}>
 
-      <Perfil theme={CurrentTheme} language={Language} />
+      <Perfil language={Language} />
       <SideMenu theme={CurrentTheme} ChangeTheme={ChangeTheme} ChangeLanguage={ChangeLanguage} />
     </div>
   )

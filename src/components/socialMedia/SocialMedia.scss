@@ -14,14 +14,11 @@
         .mediaIcon {
             width: 20px;
             height: 20px;
+            filter: $filterTextColor1;
 
             &:hover {
                 filter: $filterColor1;
             }
-        }
-
-        .dark {
-            filter: $filterDark;
         }
     }
 }

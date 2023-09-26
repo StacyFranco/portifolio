@@ -21,7 +21,7 @@ export default function SideMenu({ theme, ChangeLanguage, ChangeTheme }) {
 
     
     return (
-        <div className={`SideMenu ${theme}`}>
+        <div className={`SideMenu`}>
             <div className="MenuDiv">
                 <div
                     className="BtnMenuDiv"

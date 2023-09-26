@@ -76,10 +76,19 @@
                     width: 100%;
                     font-family: $fontBold;
                     color: $textColor2;
+                    .DownloadIconDiv {
+                        display: inline;
+                       // padding-top: 5px; in case you want to take de inline option!
+                       padding-left: 5px;
+                        filter: $filterTextColor2;
+                    }
 
                     &:hover {
                         color: $textColor1;
                         cursor: pointer;
+                        .DownloadIconDiv {
+                            filter: $filterTextColor1;
+                        }
                     }
                 }
             }

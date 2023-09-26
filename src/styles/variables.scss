@@ -1,25 +1,28 @@
-.light{
+.light {
   --background-color1: #2c2c38;
   --background-color2: #23232e;
   --background-color3: #20202a;
   --background-color4: #191923;
-  --background-color5:#1e1e28;
+  --background-color5: #1e1e28;
   --text-color1: #fafafc;
   --text-color2: #8c8c8e;
   --color1: #FFC107;
-  }
+}
 
-  .dark{
-    --background-color1: #2c2c38;
-    --background-color2: #24232e;
-    --background-color3: #20202a;
-    --background-color4: #191923;
-    --background-color5:#1e1e28;
-    --text-color1: #fafafc;
-    --text-color2: #8c8c8e;
-    --color1: #FFC107;
-   // --color2: #fafafa ;
-  }
+.dark {
+  --background-color1: #2c2c38;
+  --background-color2: #24232e;
+  --background-color3: #20202a;
+  --background-color4: #191923;
+  --background-color5: #1e1e28;
+  --text-color1: #fafafc;
+  --text-color2: #8c8c8e;
+  --color1: #FFC107;
+  // --color2: #fafafa ;
+  --filterTextColor1: invert(100%) sepia(7%) saturate(1233%) hue-rotate(180deg) brightness(100%) contrast(98%);
+  --filter-text-color2: invert(59%) sepia(2%) saturate(284%) hue-rotate(202deg) brightness(93%) contrast(93%);
+  --filter-color1: brightness(0) saturate(100%) invert(75%) sepia(64%) saturate(1367%) hue-rotate(354deg) brightness(101%) contrast(101%);
+}
 
 
 $backgroundColor1: var(--background-color1);
@@ -27,15 +30,15 @@ $backgroundColor2: var(--background-color2);
 $backgroundColor3: var(--background-color3);
 $backgroundColor4: var(--background-color4);
 $backgroundColor5: var(--background-color5);
-$textColor1 :var(--text-color1);
-$textColor2 :var(--text-color2);
-$color1 :var(--color1);
+$textColor1: var(--text-color1);
+$textColor2: var(--text-color2);
+$color1: var(--color1);
 //$color2 :var(--text-color);
 $fontLight: 'Poppins Light';
 $fontRegular: 'Poppins Regular';
 $fontBold: 'Poppins Bold';
-$desktopBreakpoint:992px;
+$desktopBreakpoint: 992px;
 $fontSize12: 12px;
-$filterDark: invert(100%) sepia(7%) saturate(1233%) hue-rotate(180deg) brightness(100%) contrast(98%);
-$filterColor1: brightness(0) saturate(100%) invert(75%) sepia(64%) saturate(1367%) hue-rotate(354deg) brightness(101%) contrast(101%);
-$filterTextColor2: invert(59%) sepia(2%) saturate(284%) hue-rotate(202deg) brightness(93%) contrast(93%);
+$filterTextColor1: var(--filterTextColor1);
+$filterTextColor2: var(--filter-text-color2);
+$filterColor1: var(--filter-color1);
