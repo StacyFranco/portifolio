@@ -20,6 +20,10 @@
                 .off {
                     //the way to make this color be observed if the importante
                     color: $textColor1 !important;
+
+                    &.icon {
+                        filter: $filterTextColor1 !important;
+                    }
                 }
             }
 
@@ -34,7 +38,15 @@
                     font-size: $fontSize12;
                     font-family: $fontBold;
                     padding-left: 8px;
-                    transition: 0.4s;
+
+
+                    &.icon {
+                        display: block;
+                        margin-bottom: 5px;
+                        height: 10px;
+                        padding-left: 5px;
+                        filter: $filterTextColor2;
+                    }
                 }
 
                 .off {
@@ -68,12 +80,11 @@
                 height: 20px;
                 border-radius: 100%;
                 background-color: $color1;
-                transition: 0.4s;
+
             }
 
             .on {
                 display: none;
-                transition: 0.4s;
             }
 
             .off {
@@ -82,7 +93,15 @@
                 font-family: $fontBold;
                 margin-left: auto;
                 padding-right: 8px;
-                transition: 0.4s;
+
+                &.icon {
+                    display: block;
+                    margin-bottom: 5px;
+                    margin-left: auto;
+                    height: 10px;
+                    padding-left: 5px;
+                    filter: $filterTextColor2;
+                }
             }
 
 

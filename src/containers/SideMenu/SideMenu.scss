@@ -1,5 +1,5 @@
 .dark>.MenuDiv>.BtnMenuDiv {
-    filter: $filterDark;
+    filter: $filterTextColor1;
 
     &:hover {
         filter: $filterColor1;
@@ -34,7 +34,6 @@
 
     .hiden {
         display: none;
-        transition: 1s;
     }
 
     .configMenu {}

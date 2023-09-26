@@ -4,7 +4,7 @@
 
 
 //Language selector: to change the laguages of the site change the selectors in the array and in the objects that use this selectors!
-const LanguageOptions = ["pt","en"];
+const LanguageOptions = ["en","pt"];
     
 
 // Perfil Card
