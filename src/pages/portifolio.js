@@ -3,6 +3,10 @@
 // favicon : to change into your personal icon subtitute the /public/favicon.ico for your icon. You must keep the same name!
 
 
+//Language selector: to change the laguages of the site change the selectors in the array and in the objects that use this selectors!
+const LanguageOptions = ["pt","en"];
+    
+
 // Perfil Card
 const PersonalInfo = {
     firstName: "Stacy",
@@ -42,5 +46,6 @@ email: "mailto:"+"stacyfranco@hotmail.com",
 
 export{
     socialMediaLinks,
-    PersonalInfo
+    PersonalInfo,
+    LanguageOptions
 }

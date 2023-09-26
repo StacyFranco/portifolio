@@ -1,0 +1,41 @@
+.NavBarItenDiv {
+    padding: 5px;
+
+    & .hiden {
+        span {
+            display: none;
+        }
+    }
+
+    & .dark>.NavIcon {
+        filter: $filterDark;
+    }
+
+    .NavBarContentDiv {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            filter: $filterColor1;
+        }
+
+        .NavIcon {
+            height: 20px;
+            width: 20px;
+        }
+
+        span {
+            padding-left: 10px;
+        }
+    }
+
+}
+
+@media screen and (max-width: $desktopBreakpoint) {
+    .NavBarItenDiv {
+        & .hiden {
+            display: none;
+        }
+    }
+}

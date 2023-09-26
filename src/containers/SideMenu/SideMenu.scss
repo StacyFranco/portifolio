@@ -1,13 +1,41 @@
-.SideMenu{
-    margin-left: auto;
+.dark>.MenuDiv>.BtnMenuDiv {
+    filter: $filterDark;
 
-    .BtnMenuDiv{
-        .BtnMenu{
-            margin: auto;
-        }
-        .MenuIcon{
-            height: 15px;
-            width: 15px;
+    &:hover {
+        filter: $filterColor1;
+    }
+}
+
+.SideMenu {
+    margin-left: auto;
+    height: 100vh;
+    background-color: $backgroundColor2;
+    display: flex;
+    flex-direction: column;
+
+    .MenuDiv {
+        .BtnMenuDiv {
+            padding: 25px;
+            cursor: pointer;
+
+            .MenuIcon {
+                height: 15px;
+                width: 15px;
+
+            }
         }
     }
+
+
+    .MenuNavDiv {
+        background-color: $backgroundColor4;
+        flex: 1;
+    }
+
+    .hiden {
+        display: none;
+        transition: 1s;
+    }
+
+    .configMenu {}
 }

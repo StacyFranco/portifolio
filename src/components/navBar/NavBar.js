@@ -4,61 +4,27 @@ import about from "../../../public/icons/navBar/about.svg"
 import experience from "../../../public/icons/navBar/experience.svg"
 import portifolio from "../../../public/icons/navBar/portifolio.svg"
 import contact from "../../../public/icons/navBar/contact.svg"
+import NavBarIten from "./NavBarIten";
 
-export default function NavBar({ theme }) {
+export default function NavBar({ theme,hiden }) {
+    
     return (
         <nav className="NavBar">
             <ul>
                 <li>
-                    <div className=" NavBarLiDiv">
-                        <Image
-                            className={`NavIconLi ${theme} Icon`}
-                            src={home}
-                            alt=""
-                        />
-                        <span>home</span>
-                    </div>
-
+                    <NavBarIten theme={theme} icon={home} text={"home"} hiden={hiden} />
                 </li>
                 <li>
-                <div className=" NavBarLiDiv">
-                    <Image
-                        className={`NavIconLi ${theme} Icon`}
-                        src={about}
-                        alt=""
-                    />
-                    <span>about</span>
-                    </div>
+                    <NavBarIten theme={theme} icon={about} text={"about"} hiden={hiden}/>
                 </li>
                 <li>
-                <div className=" NavBarLiDiv">
-                    <Image
-                        className={`NavIconLi ${theme} Icon`}
-                        src={experience}
-                        alt=""
-                    />
-                    <span>experience</span>
-                    </div>
+                    <NavBarIten theme={theme} icon={experience} text={"experience"} hiden={hiden}/>
                 </li>
                 <li>
-                <div className=" NavBarLiDiv">
-                    <Image
-                        className={`NavIconLi ${theme} Icon`}
-                        src={portifolio}
-                        alt=""
-                    />
-                    <span>portifolio</span>
-                    </div>
+                    <NavBarIten theme={theme} icon={portifolio} text={"portifolio"} hiden={hiden}/>
                 </li>
                 <li>
-                <div className=" NavBarLiDiv">
-                    <Image
-                        className={`NavIconLi ${theme} Icon`}
-                        src={contact}
-                        alt=""
-                    />
-                    <span>contact</span>
-                    </div>
+                    <NavBarIten theme={theme} icon={contact} text={"contact"} hiden={hiden}/>
                 </li>
 
             </ul>
