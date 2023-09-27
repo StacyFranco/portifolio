@@ -2,98 +2,122 @@
 // this will help so I don't need to worry in changes from mobile to desktop
 //will only change how it appears with a use effect probably!
 .PerfilDiv {
-    width: 290px;
-    height: 100vh;
-    z-index: 5;
-    display: flex;
-    flex-direction: column;
+    .BtnPerfil{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+        background-color: $backgroundColor2;
 
-    .PersonalInfo {
+        &.OpenPerfil{
+            position: absolute;
+            margin-left: (290px-60px);
+        }
+        .PerfilIcon{
+            width: 15px;
+            filter: $filterTextColor1;
+        }
+    }
+
+    .PerfilContentDiv {
+        width: 290px;
+        height: 100vh;
+        z-index: 5;
         display: flex;
         flex-direction: column;
-        flex: 1;
 
-        .BasicInfo {
-            background-color: $backgroundColor2;
+        .PersonalInfo {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 10px;
-            padding-bottom: 15px;
-            position: sticky;
-            top: 0px;
-
-            .Name {
-                font-family: $fontBold;
-                color: $textColor1;
-                padding-bottom: 5px;
-            }
-
-            .Title {
-                font-size: $fontSize12;
-                color: $textColor2;
-                padding-bottom: 2px;
-            }
-        }
-
-        .AditionalInfo {
-            background-color: $backgroundColor4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 20px 10px 10px;
             flex: 1;
 
-            .dividingLine {
-                margin: 0 auto;
-                border: none;
-                background-color: $backgroundColor1;
-                height: 2px;
-                width: 96%;
-            }
+            .BasicInfo {
+                background-color: $backgroundColor2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                padding-bottom: 15px;
+                position: sticky;
+                top: 0px;
 
-            .Adress {
-                font-size: $fontSize12;
-                color: $textColor1;
-                padding-bottom: 10px;
-            }
-
-            .Copyright {
-                font-size: $fontSize12;
-                color: $textColor2;
-                padding: 15px 0;
-            }
-
-            .btnResumeDiv {
-                width: 100%;
-                margin-top: auto;
-                .btnResume {
-                    background-color: $backgroundColor4;
-                    border: none;
-                    padding: 10px;
-                    padding-bottom: 0;
-                    width: 100%;
+                .Name {
                     font-family: $fontBold;
-                    color: $textColor2;
-                    .DownloadIconDiv {
-                        display: inline;
-                       // padding-top: 5px; in case you want to take de inline option!
-                       padding-left: 5px;
-                        filter: $filterTextColor2;
-                    }
+                    color: $textColor1;
+                    padding-bottom: 5px;
+                }
 
-                    &:hover {
-                        color: $textColor1;
-                        cursor: pointer;
-                        .DownloadIconDiv {
-                            filter: $filterTextColor1;
-                        }
-                    }
+                .Title {
+                    font-size: $fontSize12;
+                    color: $textColor2;
+                    padding-bottom: 2px;
                 }
             }
 
+            .AditionalInfo {
+                background-color: $backgroundColor4;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding: 20px 10px 10px;
+                flex: 1;
 
+                .dividingLine {
+                    margin: 0 auto;
+                    border: none;
+                    background-color: $backgroundColor1;
+                    height: 2px;
+                    width: 96%;
+                }
+
+                .Adress {
+                    font-size: $fontSize12;
+                    color: $textColor1;
+                    padding-bottom: 10px;
+                }
+
+                .Copyright {
+                    font-size: $fontSize12;
+                    color: $textColor2;
+                    padding: 15px 0;
+                }
+
+                .btnResumeDiv {
+                    width: 100%;
+                    margin-top: auto;
+
+                    .btnResume {
+                        background-color: $backgroundColor4;
+                        border: none;
+                        padding: 10px;
+                        padding-bottom: 0;
+                        width: 100%;
+                        font-family: $fontBold;
+                        color: $textColor2;
+
+                        .DownloadIconDiv {
+                            display: inline;
+                            // padding-top: 5px; in case you want to take de inline option!
+                            padding-left: 5px;
+                            filter: $filterTextColor2;
+                        }
+
+                        &:hover {
+                            color: $textColor1;
+                            cursor: pointer;
+
+                            .DownloadIconDiv {
+                                filter: $filterTextColor1;
+                            }
+                        }
+                    }
+                }
+
+
+            }
         }
     }
 }

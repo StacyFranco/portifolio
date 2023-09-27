@@ -45,7 +45,7 @@ const ChangeTheme = () =>{
     <div className={`IndexDiv ${CurrentTheme}`}>
 
       <Perfil language={Language} />
-      <SideMenu theme={CurrentTheme} ChangeTheme={ChangeTheme} ChangeLanguage={ChangeLanguage} />
+      <SideMenu theme={CurrentTheme} ChangeTheme={ChangeTheme} ChangeLanguage={ChangeLanguage} language={Language}/>
     </div>
   )
 }

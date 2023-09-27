@@ -6,38 +6,8 @@
         li {
             list-style: none;
 
-            .NavBarLiDiv {
-
-                padding: 5px;
-                display: flex;
-                align-items: center;
-                cursor: pointer;
-
-                &:hover{
-                    filter: $filterColor1;
-                }
-
-                .dark {
-                    filter: $filterTextColor1;
-                }
-
-                .NavIconLi {
-                    height: 20px;
-                    width: 20px;
-
-
-                }
-
-                span {
-                    padding-left: 10px;
-                }
-
             }
-
         }
-
-
     }
 
 
-}

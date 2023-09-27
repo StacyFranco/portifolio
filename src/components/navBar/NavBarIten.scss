@@ -1,14 +1,13 @@
 .NavBarItenDiv {
-    padding: 5px;
+    padding: 15px;
+    
 
     & .hiden {
+        display: flex;
+    justify-content: center;
         span {
             display: none;
         }
-    }
-
-    & .dark>.NavIcon {
-        filter: $filterTextColor1;
     }
 
     .NavBarContentDiv {
@@ -23,10 +22,11 @@
         .NavIcon {
             height: 20px;
             width: 20px;
+            filter: $filterTextColor1;
         }
 
         span {
-            padding-left: 10px;
+            padding: 0 20px;
         }
     }
 

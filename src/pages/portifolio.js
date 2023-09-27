@@ -33,6 +33,8 @@ const PersonalInfo = {
         pt: "© 2023 Stacy Franco.  Todos os direitos Reservados"
     }
 };
+
+//Medias to contact... if you do not have one of them just comment the line
 const socialMediaLinks = {
 /* Your Social Media Link */
 github: "https://github.com/StacyFranco",
@@ -44,8 +46,16 @@ email: "mailto:"+"stacyfranco@hotmail.com",
 
 };
 
+// Name of the pages
+const NavBarNames = {
+    // Ps. Just ajust names for language or little changes because icon and content will not change!
+    en:["Home","About","Experience","Portifolio", "Contact"],
+    pt:["Início","Sobre","Experiência","Portifólio", "Contato"],
+};
+
 export{
     socialMediaLinks,
     PersonalInfo,
-    LanguageOptions
+    LanguageOptions,
+    NavBarNames,
 }

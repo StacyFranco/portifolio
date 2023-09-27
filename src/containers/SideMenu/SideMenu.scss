@@ -1,25 +1,24 @@
-.dark>.MenuDiv>.BtnMenuDiv {
-    filter: $filterTextColor1;
-
-    &:hover {
-        filter: $filterColor1;
-    }
-}
-
 .SideMenu {
     margin-left: auto;
-    height: 100vh;
     background-color: $backgroundColor2;
     display: flex;
     flex-direction: column;
+
+    &.openMenu {
+        height: 100vh;
+    }
 
     .MenuDiv {
         .BtnMenuDiv {
             filter: $filterTextColor1;
             padding: 25px;
             cursor: pointer;
-            &:hover {
-                filter: $filterColor1;
+
+            @media screen and (min-width: $desktopBreakpoint ) {
+                &:hover {
+                    filter: $filterColor1;
+                }
+
             }
 
             .MenuIcon {
@@ -29,15 +28,31 @@
         }
     }
 
-
-    .MenuNavDiv {
-        background-color: $backgroundColor4;
+    .MenuContentDiv {
         flex: 1;
-    }
+        display: flex;
+        flex-direction: column;
 
-    .hiden {
-        display: none;
-    }
+        .MenuNavDiv {
+            background-color: $backgroundColor4;
+            flex: 1;
+            padding-top: 20px;
 
-    .configMenu {}
+            &.desktop{
+                padding-top: 30px;
+            }
+        }
+
+        
+        .configMenu {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+
+            &.openMenu {
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+        }
+    }
 }

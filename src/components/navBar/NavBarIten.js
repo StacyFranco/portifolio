@@ -2,7 +2,6 @@ import Image from "next/image"
 
 
 export default function NavBarIten({
-    theme,
     icon,
     text,
     hiden,
@@ -13,11 +12,10 @@ export default function NavBarIten({
         <div className={`NavBarItenDiv`} >
             <div 
             onClick={onClick}
-            className={`NavBarContentDiv ${theme} ${hiden ? "hiden" : ""}`}>
+            className={`NavBarContentDiv ${hiden ? "hiden" : ""}`}>
                 <Image
                     className="NavIcon"
                     src={icon}
-                    alt=""
                 />
                 <span>{text}</span>
             </div>

@@ -5,26 +5,27 @@ import experience from "../../../public/icons/navBar/experience.svg"
 import portifolio from "../../../public/icons/navBar/portifolio.svg"
 import contact from "../../../public/icons/navBar/contact.svg"
 import NavBarIten from "./NavBarIten";
+import { NavBarNames } from "@/pages/portifolio";
 
-export default function NavBar({ theme,hiden }) {
+export default function NavBar({ hiden, language }) {
     
     return (
         <nav className="NavBar">
             <ul>
                 <li>
-                    <NavBarIten theme={theme} icon={home} text={"home"} hiden={hiden} />
+                    <NavBarIten icon={home} text={NavBarNames[language][0]} hiden={hiden} />
                 </li>
                 <li>
-                    <NavBarIten theme={theme} icon={about} text={"about"} hiden={hiden}/>
+                    <NavBarIten icon={about} text={NavBarNames[language][1]} hiden={hiden}/>
                 </li>
                 <li>
-                    <NavBarIten theme={theme} icon={experience} text={"experience"} hiden={hiden}/>
+                    <NavBarIten icon={experience} text={NavBarNames[language][2]} hiden={hiden}/>
                 </li>
                 <li>
-                    <NavBarIten theme={theme} icon={portifolio} text={"portifolio"} hiden={hiden}/>
+                    <NavBarIten icon={portifolio} text={NavBarNames[language][3]} hiden={hiden}/>
                 </li>
                 <li>
-                    <NavBarIten theme={theme} icon={contact} text={"contact"} hiden={hiden}/>
+                    <NavBarIten icon={contact} text={NavBarNames[language][4]} hiden={hiden}/>
                 </li>
 
             </ul>
