@@ -1,0 +1,16 @@
+.HearderBarDiv{
+    width: 100%;
+    background-color: $backgroundColor3;
+    padding: 0 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .PageName{
+        font-family: $fontBold;
+        font-size: $fontSize16;
+        color: $color1;
+        padding-left: 5%;
+    }
+}

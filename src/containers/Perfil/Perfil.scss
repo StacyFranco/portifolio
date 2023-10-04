@@ -2,7 +2,9 @@
 // this will help so I don't need to worry in changes from mobile to desktop
 //will only change how it appears with a use effect probably!
 .PerfilDiv {
-    .BtnPerfil{
+    z-index: 1;
+
+    .BtnPerfil {
         width: 60px;
         height: 60px;
         display: flex;
@@ -10,12 +12,14 @@
         justify-content: center;
         z-index: 5;
         background-color: $backgroundColor2;
+        cursor: pointer;
 
-        &.OpenPerfil{
+        &.OpenPerfil {
             position: absolute;
             margin-left: (290px-60px);
         }
-        .PerfilIcon{
+
+        .PerfilIcon {
             width: 15px;
             filter: $filterTextColor1;
         }
@@ -62,7 +66,7 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                padding: 20px 10px 10px;
+                padding: 20px 10px 0px;
                 flex: 1;
 
                 .dividingLine {
@@ -86,21 +90,26 @@
                 }
 
                 .btnResumeDiv {
-                    width: 100%;
+                    flex-direction: column;
+                    align-items: stretch;
                     margin-top: auto;
+                    width: 100%;
 
                     .btnResume {
                         background-color: $backgroundColor4;
-                        border: none;
+                        margin: 10px;
+                        border-radius: 10px;
                         padding: 10px;
-                        padding-bottom: 0;
-                        width: 100%;
                         font-family: $fontBold;
                         color: $textColor2;
 
+                        &:hover {
+                            border: 2px solid $color1;
+                        }
+
                         .DownloadIconDiv {
-                            display: inline;
-                            // padding-top: 5px; in case you want to take de inline option!
+                            //display: inline;
+                            padding-top: 5px; //in case you want to take de inline option!
                             padding-left: 5px;
                             filter: $filterTextColor2;
                         }

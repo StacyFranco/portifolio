@@ -1,0 +1,12 @@
+.MainDiv {
+    display: flex;
+
+    .BodyDiv {
+        position: absolute;
+        
+        @media screen and (min-width: $desktopBreakpoint ) {
+            position: relative;
+
+        }
+    }
+}
