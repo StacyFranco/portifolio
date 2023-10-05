@@ -1,0 +1,12 @@
+.ContactDiv{
+    padding: 5%;
+    .TitleDiv{
+        @include PageTitle
+    }
+    .TextDiv{
+        @include ContentPage
+    }
+    .FormDiv{
+        
+    }
+}

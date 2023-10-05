@@ -65,6 +65,10 @@ const about = {
         en:"I'm starting my journey in the world of programming. Despite being just at the beginning of this journey, I already find myself in love with the path! With every step I take, I encounter new obstacles with countless possibilities to overcome them! Since I was little, I've been passionate about challenges and puzzles, these obstacles, which range from solving bugs in codes under development to finding a new solution to implement a project, are like fuel driving me to discover simple and creative ways to be successful in my work! Using the knowledge acquired and always seeking to learn more, I am sure that this will be another great success story!",
         pt:"Estou iniciando a minha jornada no mundo da programação, e apesar de estar apenas no começo desta jornada já me encontro apaixonada pelo caminho! A cada passo que dou, encontro novos obstáculos com inúmeras possibilidades para superá-los! Apaixonada desde de pequena por desafios e quebra-cabeças, esses obstáculos, que vão desde solucionar bugs de códigos em desenvolvimento até achar uma solução nova para implementar um projeto, são como combustível me impulsionando a descobrir formas simples e criativas de obter êxito no meu trabalho! Usando o conhecimento adquirido e buscando sempre aprender mais tenho certeza que essa será mais uma grande história de sucesso! "
 
+    },
+    buttons:{
+        en:["See my projects","Contact me"],
+        pt:["Veja meus projetos","Entre em Contato"]
     }
 }
 
@@ -75,8 +79,8 @@ const contact = {
         pt: ["Vamos trabalhar juntos!"]
     },
     content:{
-        en:"If my work it is of your interest and you believe I have something to contribute to your project/company, please contact me. You can do this through social networks, email and/or WhatsApp found in the side menu or using the form below. I will try to get in touch as soon as possible!",
-        pt:"Se meu trabalho te interessou e você acredita que tenho algo para contribuir para seu projeto/empresa entre em contato comigo. Você pode fazer isso através das redes sociais, e-mail e/ou WhatsApp que se encontram no menu lateral ou pelo formulário abaixo. Tentarei entrar em contato o mais breve possível!"
+        en:["If my work it is of your interest and you believe I have something to contribute to your project/company, please contact me."," You can do this through social networks, email and/or WhatsApp found in the side menu or using the form below. I will try to get in touch as soon as possible!"],
+        pt:["Se meu trabalho te interessou e você acredita que tenho algo para contribuir para seu projeto/empresa entre em contato comigo."," Você pode fazer isso através das redes sociais, e-mail e/ou WhatsApp que se encontram no menu lateral ou pelo formulário abaixo. Tentarei entrar em contato o mais breve possível!"]
 
     },
     placeholders:{
@@ -84,8 +88,9 @@ const contact = {
             name: "Full Name",
             phone: "Phone: +CC (NCD) XXX-XXXX",
             email: "E-mail",
-            subject:"subject",
+            subject:"Subject",
             message:"Your message!",
+            submit: "Send Message"
         },
         pt:{
             name: "Nome Completo",
@@ -93,6 +98,7 @@ const contact = {
             email: "E-mail",
             subject:"Assunto",
             message: "Sua mensagem!",
+            submit: "Enviar Mensagem"
         }
     }
 
