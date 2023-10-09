@@ -1,0 +1,18 @@
+.PortifolioPage {
+
+    margin-top: 60px;
+    padding: 5%;
+
+    .TitleDiv {
+        @include PageTitle
+    }
+
+    .ContentDiv {
+        @include ContentPage
+    }
+
+    .ProjectsDiv {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

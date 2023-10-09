@@ -1,0 +1,70 @@
+.HomeDiv{
+    margin-top: 60px;
+    padding: 5%;
+    display: block;
+    
+    
+        .TitleDiv{
+            @include PageTitle
+    
+        }
+        .ContentDiv{
+            @include ContentPage
+        }
+    
+    .ImageDiv{
+        height: 300px;
+        margin: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img{
+            object-fit:contain ;
+        }
+    }
+    
+    .BtnAboutDiv{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+
+        .btn{
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+    }
+    
+    
+    @media screen and (min-width: $desktopBreakpoint ) {
+        
+        .textDiv{
+            display: flex;
+            align-items: center;
+
+            .ContentDiv{
+                width: 70%;
+            }
+            
+            .ImageDiv{
+               width: 30%;
+               height: 50vh;
+              
+            }
+        }
+        
+        .BtnAboutDiv{
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 60px;
+            
+            .btn{
+                width: 40%;
+            }
+        }
+    }
+}

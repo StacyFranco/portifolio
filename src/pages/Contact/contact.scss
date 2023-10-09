@@ -1,12 +1,62 @@
-.ContactDiv{
+.ContactPage {
     padding: 5%;
-    .TitleDiv{
+    margin-top: 60px;
+
+    .TitleDiv {
         @include PageTitle
     }
-    .TextDiv{
+
+    .TextDiv {
         @include ContentPage
     }
-    .FormDiv{
-        
+
+    .LinksDiv {
+        margin: 0 10%;
+        margin-top: 45px;
+        padding: 3%;
+        border: 3px solid $color1;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: $desktopBreakpoint ) {
+            margin-top: 65px;
+        }
+
+
+        .socialMediaDiv {
+            width: 100%;
+            background-color: transparent;
+
+            a {
+                width: 55px;
+                height: 55px;
+                border-radius: 50%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &:hover {
+                    box-shadow: 0px 0px 20px $color1;
+                }
+
+                .mediaIcon {
+                    width: 30px;
+                    height: 30px;
+                    filter: $filterTextColor1;
+
+                    &:hover {
+                        filter: $filterColor1;
+                    }
+
+                    @media screen and (min-width: $desktopBreakpoint ) {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+        }
     }
 }

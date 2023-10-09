@@ -1,7 +1,6 @@
-import preferences from "@/assests/preferences"
-import { about } from "../portifolio";
+import { about } from "../portfolio";
 import Btn from "@/components/BtnColor1/btnColor1";
-import { NavBarNames } from "@/pages/portifolio";
+import { NavBarNames } from "@/pages/portfolio";
 import { useRouter } from "next/router";
 
 
@@ -14,7 +13,7 @@ export default function About({language}){
     return(
         <div className="AboutDiv">
             <div className="TitleDiv">
-              <h1>{about.title[language][0]}<strong>{about.title[language][1]}</strong></h1>  
+              <h1>{about.title[language][0]}<strong>{about.title[language][1]}</strong>{about.title[language][2]}</h1>  
             </div>
             <div className="ContentDiv">
                 <p>{about.content[language]}</p>

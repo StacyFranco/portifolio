@@ -1,0 +1,53 @@
+.ProjectCardDiv{
+    min-width: 350px;
+    flex: 1;
+    padding: 20px;
+    margin: 20px;
+    background-color: $backgroundColor2;
+    border-radius: 20px;
+
+    .ProjectCardImage{
+        position: relative;
+        min-width: 310px;
+        min-height: 200px;
+
+        img{
+            border-radius: 20px;
+            object-fit: contain;
+        }
+        
+    }
+    .ProjectCardInfo{
+        margin-top: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        
+        .ProjectCardTitle{
+            text-align: center;
+            font-family: $fontBold;
+            font-size: 20px;
+        }
+        .ProjectCardtext{
+            text-align: justify;
+            font-size: 16px;
+        }
+        .ProjectCardFooterDiv{
+            display: flex;
+            align-items: center;
+            padding-top: 5px;
+
+            .ProjectCardTools{
+                display: flex;
+                margin-right: 10px;
+    
+            }
+
+            .btnProject{
+                display: inline-flex;
+                margin-left: auto;
+                padding: 10px;
+            }
+        }
+    }
+}
