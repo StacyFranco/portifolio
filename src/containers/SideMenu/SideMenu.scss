@@ -1,33 +1,47 @@
 .SideMenu {
     margin-left: auto;
-    background-color: $backgroundColor2;
+    background-color: transparent;
     display: flex;
     flex-direction: column;
-    height: 60px;
-    z-index: 1;
+    height: 100vh;//60px;
+    z-index: 2;
+    position: fixed;
+    right: 0;
 
     &.openMenu {
         height: 100vh;
+        width: 180px;
+        .MenuDiv {
+            .BtnMenuDiv {
+                width: 40px;
+            }
+        }
     }
 
     .MenuDiv {
+        background-color: $backgroundColor2;
+      
         .BtnMenuDiv {
             filter: $filterTextColor1;
             //padding: 25px;
             height: 60px;
-            width: 60px;
+            width: 74px;
             justify-content: center;
             display: flex;
             align-items: center;
             cursor: pointer;
-
-            @media screen and (min-width: $desktopBreakpoint ) {
+            
+            &:hover {
+                filter: $filterColor1;
+            }
+// it was using because in the developer tool on chrome in celular option it was changing the btn colo when clicked
+/*            @media screen and (min-width: $desktopBreakpoint ) {
                 &:hover {
                     filter: $filterColor1;
                 }
 
             }
-
+*/
             .MenuIcon {
                 height: 15px;
                 width: 15px;
@@ -39,22 +53,28 @@
         flex: 1;
         display: flex;
         flex-direction: column;
+        
 
         .MenuNavDiv {
             background-color: $backgroundColor4;
             flex: 1;
             padding-top: 20px;
-
+            
+        
             &.desktop{
                 padding-top: 30px;
+                flex: 1;
             }
         }
 
         
         .configMenu {
+            background-color: $backgroundColor2;
+            margin-top: auto;
             display: flex;
             flex-direction: column;
             padding: 10px;
+            
 
             &.openMenu {
                 flex-direction: row;

@@ -1,16 +1,26 @@
 .HearderBarDiv{
+    position: fixed;
+    left: 0;
     width: 100%;
-    background-color: $backgroundColor3;
-    padding: 0 60px;
+    background-color: $backgroundColor2;
+    padding: 0 74px;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 
     .PageName{
         font-family: $fontBold;
         font-size: $fontSize16;
         color: $color1;
         padding-left: 5%;
+    }
+    @media screen and (min-width: $desktopBreakpoint ) {
+        margin-left: 230px;
+        width: calc(100% - 230px);
+        
+        
+        
     }
 }

@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 import Perfil from "../containers/Perfil/Perfil"
 import SideMenu from "../containers/SideMenu/SideMenu";
-import { LanguageOptions } from "./portifolio";
+import { LanguageOptions } from "./portfolio";
 import Home from "./Home";
 
-export default function Index() {
+export default function Index({language}) {
 
   // for get preference theme from the browser use: 
   //const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
@@ -21,7 +21,7 @@ export default function Index() {
 
   return (
     <div>
-      <Home />
+      <Home language={language}/>
     </div>
     
   )

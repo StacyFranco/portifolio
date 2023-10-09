@@ -1,4 +1,4 @@
-import { NavBarNames } from "@/pages/portifolio";
+import { NavBarNames } from "@/pages/portfolio";
 import { useEffect, useState } from "react";
 
 
@@ -12,7 +12,7 @@ useEffect(() => {
     const PageNewName = PageIndex === -1 ? NavBarNames[language][0] : NavBarNames[language][PageIndex]
     setPageName(PageNewName )
     
-},[language])
+},[language,window.location.pathname])
    
     return(
         <div className="HearderBarDiv">

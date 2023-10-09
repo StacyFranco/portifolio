@@ -5,6 +5,8 @@
         position: absolute;
         
         @media screen and (min-width: $desktopBreakpoint ) {
+            padding-left: 290px;
+            padding-right: 75px;
             position: relative;
 
         }
