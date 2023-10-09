@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { PersonalInfo } from "@/pages/portifolio"
+import { PersonalInfo } from "@/pages/portfolio"
 
 
 

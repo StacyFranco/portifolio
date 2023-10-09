@@ -4,7 +4,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia"
 import download from "../../../public/icons/download.svg"
 import close from "../../../public/icons/sideMenu/close.svg"
 import user from "../../../public/icons/user.svg"
-import { PersonalInfo } from "@/pages/portifolio"
+import { PersonalInfo } from "@/pages/portfolio"
 import { useState } from "react"
 export default function Perfil({ language }) {
     const [hiden, setHiden] = useState(true);
