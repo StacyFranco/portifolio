@@ -1,5 +1,5 @@
 import CertificationCard from "@/components/certificationCard/certificationCard";
-import { certificates } from "@/pages/personalInfo";
+import { certificates } from "@/PersonalContent/personalInfo";
 
 export default function Certifications({language}){
     return(

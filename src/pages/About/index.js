@@ -1,6 +1,6 @@
-import { about } from "../personalInfo";
+import { about } from "../../PersonalContent/personalInfo";
 import Btn from "@/components/BtnColor1/btnColor1";
-import { NavBarNames } from "@/pages/personalInfo";
+import { NavBarNames } from "@/PersonalContent/personalInfo";
 import { useRouter } from "next/router";
 
 

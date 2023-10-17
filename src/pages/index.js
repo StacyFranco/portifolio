@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import Perfil from "../containers/Perfil/Perfil"
 import SideMenu from "../containers/SideMenu/SideMenu";
-import { LanguageOptions } from "./personalInfo";
+import { LanguageOptions } from "../PersonalContent/personalInfo";
 import Home from "./Home";
 
 export default function Index({language}) {
