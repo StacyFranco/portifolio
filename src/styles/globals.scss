@@ -18,11 +18,11 @@
 @import "../components/projectCard/ProjectCard.scss";
 @import "../pages/Portfolio/portfolio.scss";
 @import "../pages/Home/home.scss";
-@import "../pages/Skills/skills.scss";
-
+@import "../pages/Certificates/certificates.scss";
+@import "../components/certificationCard/certificationCard.scss";
 
 *{
-  color-scheme: dark ;//light;
+  //dark ;//light;
   font-family: $fontRegular;
   font-size: 14px;
   box-sizing: border-box;

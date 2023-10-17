@@ -1,0 +1,12 @@
+.CertificatesPage{
+    padding: 5%;
+    margin-top: 60px;
+
+    .TitleDiv {
+        @include PageTitle
+    }
+
+    .TextDiv {
+        @include ContentPage
+    }
+}

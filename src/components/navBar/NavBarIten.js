@@ -6,13 +6,14 @@ export default function NavBarIten({
     text,
     hiden,
     onClick,
+    active,
 }) {
     return (
 
         <div className={`NavBarItenDiv`} >
             <div 
             onClick={onClick}
-            className={`NavBarContentDiv ${hiden ? "hiden" : ""}`}>
+            className={`NavBarContentDiv ${hiden ? "hiden" : ""} ${active? "active" : ""}`}>
                 <Image
                     className="NavIcon"
                     src={icon}

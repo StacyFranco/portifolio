@@ -45,9 +45,18 @@ export default function Perfil({ language }) {
                         <span className="Adress"> {PersonalInfo.adress} - {PersonalInfo.country[language]}</span>
                         <hr className="dividingLine" />
                         <span className="Copyright">  {PersonalInfo.copyright[language]}</span>
+                        <hr className="dividingLine" />
+                        <div className="SkillsDiv">
+                            {
+                                PersonalInfo.skills[language].map(skill =>(
+                                    <p className="Skills">{skill}</p>
+
+                                ))
+                            }
+                        </div>
                         <div className="btnResumeDiv">
                             <hr className="dividingLine" />
-                            <button className="btnResume" >Download {PersonalInfo.resumeName[language]} <div className="DownloadIconDiv">
+                            <button className="btnResume" onClick={()=>window.open(PersonalInfo.resumeLink[language])}>Download {PersonalInfo.resumeName[language]} <div className="DownloadIconDiv">
                                 <Image
                                     className="DownloadIcon"
                                     src={download}

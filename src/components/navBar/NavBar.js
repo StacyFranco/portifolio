@@ -7,28 +7,33 @@ import contact from "../../../public/icons/navBar/contact.svg"
 import NavBarIten from "./NavBarIten";
 import { NavBarNames } from "@/pages/portfolio";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function NavBar({ hiden, language }) {
-    const [activeRoute, SetActiveRoute] = useState('home')
+    const [activeRoute, SetActiveRoute] = useState('Home')
     const router = useRouter();
 
     const FindActiveRoute = () => {
         const IndexActiveRoute = NavBarNames.en.findIndex(name => {
-            return name.includes(window.location.pathname);
+            return name.includes(window.location.pathname.slice(1));
         });
 
         if (IndexActiveRoute === -1) {
             SetActiveRoute('Home')
+
         } else {
             SetActiveRoute(NavBarNames.en[IndexActiveRoute])
+
         }
+
     };
 
     const OnClickIten = (ItenName) => {
         router.push(`/${ItenName}`)
     }
-
+    useEffect(() => {
+        FindActiveRoute();
+    }, [window.location.pathname])
 
     return (
         <nav className="NavBar">
@@ -38,35 +43,41 @@ export default function NavBar({ hiden, language }) {
                         icon={home}
                         text={NavBarNames[language][0]}
                         onClick={() => OnClickIten("")}
-                        hiden={hiden} />
+                        hiden={hiden}
+                        active={activeRoute == NavBarNames.en[0] ? true : false}
+                    />
                 </li>
                 <li>
                     <NavBarIten
                         icon={about}
                         text={NavBarNames[language][1]}
                         onClick={() => OnClickIten(NavBarNames.en[1])}
-                        hiden={hiden} />
+                        hiden={hiden}
+                        active={activeRoute == NavBarNames.en[1] ? true : false} />
                 </li>
                 <li>
                     <NavBarIten
                         icon={experience}
                         text={NavBarNames[language][2]}
                         onClick={() => OnClickIten(NavBarNames.en[2])}
-                        hiden={hiden} />
+                        hiden={hiden} 
+                        active={activeRoute == NavBarNames.en[2] ? true : false}/>
                 </li>
                 <li>
                     <NavBarIten
                         icon={portifolio}
                         text={NavBarNames[language][3]}
                         onClick={() => OnClickIten(NavBarNames.en[3])}
-                        hiden={hiden} />
+                        hiden={hiden} 
+                        active={activeRoute == NavBarNames.en[3] ? true : false}/>
                 </li>
                 <li>
                     <NavBarIten
                         icon={contact}
                         text={NavBarNames[language][4]}
                         onClick={() => OnClickIten(NavBarNames.en[4])}
-                        hiden={hiden} />
+                        hiden={hiden} 
+                        active={activeRoute == NavBarNames.en[4] ? true : false}/>
                 </li>
 
             </ul>

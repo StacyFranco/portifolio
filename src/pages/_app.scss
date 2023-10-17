@@ -1,8 +1,11 @@
 .MainDiv {
     display: flex;
+    
 
     .BodyDiv {
         position: absolute;
+        background-color: $backgroundColor5;
+        min-height: 100vh;
         
         @media screen and (min-width: $desktopBreakpoint ) {
             padding-left: 290px;

@@ -1,0 +1,43 @@
+.CertificationCardDiv{
+    flex: 1;
+    display: flex;
+    border: 1px solid $color1;
+    border-radius: 15px;
+    margin: 10px;
+    min-width: 250px;
+    &:hover{
+        box-shadow: 0 0 15px $color1;
+        cursor: pointer;
+    }
+
+    .CertImageDiv{
+        background-color: $backgroundColor4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        img{
+            margin: 10px;
+            
+        }
+    }
+    .CertTextDiv{
+        flex: 1;
+        padding: 25px;
+        background-color: $backgroundColor1;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        .CertTitle{
+            text-align: center;
+            padding-bottom: 10px;
+            font-family: $fontBold;
+            color: $textColor1;
+        }
+        .CertText{
+            text-align: center;
+            font-family: $fontRegular;
+            color: $textColor2;
+        }
+    }
+}

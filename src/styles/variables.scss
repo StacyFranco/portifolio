@@ -1,28 +1,30 @@
 .light {
-  --background-color1: #f5f5ba;
-  --background-color2: #fbfe9b;
+  --ColorScheme: light;
+  --background-color1: #edf9fe;
+  --background-color2: #d7ecf6;//#a9cfe1;
   --background-color3: #ffec83;
-  --background-color4: #fff267;
-  --background-color5: #ffe062;
-  --text-color1: #fafafc;
+  --background-color4: #a9cfe1;//#d7ecf6;
+  --background-color5: white;
+  --text-color1: black;
   --text-color2: #8c8c8e;
-  --color1: #FFC107;
-  --filterTextColor1: brightness(50%);
+  --color1: #ff9807;
+  --filter-text-color1: brightness(50%);
   --filter-text-color2: invert(59%) sepia(2%) saturate(284%) hue-rotate(202deg) brightness(93%) contrast(93%);
-  --filter-color1: brightness(0) saturate(100%) invert(75%) sepia(64%) saturate(1367%) hue-rotate(354deg) brightness(101%) contrast(101%);
+  --filter-color1: invert(51%) sepia(97%) saturate(523%) hue-rotate(353deg) brightness(105%) contrast(105%);
 }
 
 .dark {
+  --ColorScheme: dark;
   --background-color1: #2c2c38;
   --background-color2: #24232e;
   --background-color3: #20202a;
   --background-color4: #191923;
-  --background-color5: #1e1e28;
+  --background-color5: black;//#1e1e28;
   --text-color1: #fafafc;
   --text-color2: #8c8c8e;
   --color1: #FFC107;
   // --color2: #fafafa ;
-  --filterTextColor1: invert(100%) sepia(7%) saturate(1233%) hue-rotate(180deg) brightness(100%) contrast(98%);
+  --filter-text-color1: invert(100%) sepia(7%) saturate(1233%) hue-rotate(180deg) brightness(100%) contrast(98%);
   --filter-text-color2: invert(59%) sepia(2%) saturate(284%) hue-rotate(202deg) brightness(93%) contrast(93%);
   --filter-color1: brightness(0) saturate(100%) invert(75%) sepia(64%) saturate(1367%) hue-rotate(354deg) brightness(101%) contrast(101%);
 }
@@ -37,6 +39,7 @@ $color1: var(--color1);
 //$color2 :var(--text-color);
 $desktopBreakpoint: 992px;
 $Breakpoint500: 500px;
+$ColorScheme: var(--ColorScheme);
 
 // font Variables
 $fontLight: 'Poppins Light';
@@ -48,7 +51,7 @@ $textColor1: var(--text-color1);
 $textColor2: var(--text-color2);
 
 //Filters to change color of svg images 
-$filterTextColor1: var(--filterTextColor1);
+$filterTextColor1: var(--filter-text-color1);
 $filterTextColor2: var(--filter-text-color2);
 $filterColor1: var(--filter-color1);
 
@@ -61,6 +64,7 @@ $filterColor1: var(--filter-color1);
     font-size: 40px;
     font-family: $fontBold;
     text-align: center;
+    color: $textColor1;
 
     strong {
       color: $color1;
@@ -87,6 +91,7 @@ $filterColor1: var(--filter-color1);
   text-align: justify;
   text-indent: 30px;
   padding-top: 20px;
+  color: $textColor2;
 
   p {
     font-size: 20px;

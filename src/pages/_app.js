@@ -34,7 +34,7 @@ export default function App({ Component, pageProps }) {
         if (newLanguage !== null) {
             setLanguage(newLanguage)
         } else {
-            localStorage.setItem('language', Language)
+            localStorage.setItem('language', LanguageOptions[0])
         }
     }, [LanguageChange]);
 
@@ -63,15 +63,16 @@ export default function App({ Component, pageProps }) {
                 <>
                     <div lang='en' className={` MainDiv ${CurrentTheme}`}>
                         <Perfil language={Language} />
-                        <div className= "BodyDiv" >
+                        <div className="BodyDiv" >
                             <HeaderBar language={Language} />
                             <Component  {...pageProps} theme={CurrentTheme} language={Language} />
                         </div>
                         <SideMenu theme={CurrentTheme} ChangeTheme={ChangeTheme} ChangeLanguage={ChangeLanguage} language={Language} LangBtnChecked={Language !== LanguageOptions[0]} />
-                    </div >
-                    
 
-                    
+                    </div >
+
+
+
 
                 </>
 
