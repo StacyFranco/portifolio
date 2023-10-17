@@ -1,5 +1,5 @@
 import preferences from "@/assests/preferences"
-import { contact, socialMediaLinks } from "../portfolio"
+import { contact, socialMediaLinks } from "../personalInfo"
 import { useState } from "react"
 import ContactForm from "@/containers/ContactForm/ContactForm"
 import SocialMedia from "@/components/socialMedia/SocialMedia"

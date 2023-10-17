@@ -1,4 +1,4 @@
-import { NavBarNames } from "@/pages/portfolio";
+import { NavBarNames } from "@/pages/personalInfo";
 import { useEffect, useState } from "react";
 
 

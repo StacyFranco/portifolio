@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Perfil from "../containers/Perfil/Perfil"
 import SideMenu from "../containers/SideMenu/SideMenu";
-import { LanguageOptions } from "../pages/portfolio";
+import { LanguageOptions } from "../pages/personalInfo";
 import HeaderBar from "@/components/headerBar/headerBar";
 
 export default function preferences(Component) {

@@ -6,8 +6,8 @@ import close from "../../../public/icons/sideMenu/close.svg"
 import sun from "../../../public/icons/sideMenu/sun.svg"
 import moon from "../../../public/icons/sideMenu/moon.svg"
 
-import { LanguageOptions } from "@/pages/portfolio"
-import { ThemeOptions } from "@/pages/portfolio"
+import { LanguageOptions } from "@/pages/personalInfo"
+import { ThemeOptions } from "@/pages/personalInfo"
 import NavBar from "@/components/navBar/NavBar"
 import ToggleButton from "@/components/ToggleButton/ToggleButton"
 

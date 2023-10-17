@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/projectCard/ProjectCard";
-import { projectBtn, projects, projectsHeader } from ".";
+import { projectBtn, projects, projectsHeader } from "../personalInfo";
 
 
 

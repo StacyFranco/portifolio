@@ -1,6 +1,6 @@
-import { PersonalInfo, home } from "../portfolio";
+import { PersonalInfo, home } from "../personalInfo";
 import Btn from "@/components/BtnColor1/btnColor1";
-import { NavBarNames } from "@/pages/portfolio";
+import { NavBarNames } from "@/pages/personalInfo";
 import Image from "next/image";
 import { useRouter } from "next/router";
 

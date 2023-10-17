@@ -1,6 +1,6 @@
 import FormIten from "@/components/formIten/formIten";
 import BtnColor1 from "@/components/BtnColor1/btnColor1";
-import { contact, socialMediaLinks } from "../../pages/portfolio";
+import { contact, socialMediaLinks } from "../../pages/personalInfo";
 import { useState } from "react";
 
 

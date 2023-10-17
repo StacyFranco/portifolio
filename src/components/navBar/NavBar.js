@@ -5,7 +5,7 @@ import experience from "../../../public/icons/navBar/experience.svg"
 import portifolio from "../../../public/icons/navBar/portifolio.svg"
 import contact from "../../../public/icons/navBar/contact.svg"
 import NavBarIten from "./NavBarIten";
-import { NavBarNames } from "@/pages/portfolio";
+import { NavBarNames } from "@/pages/personalInfo";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 

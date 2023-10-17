@@ -1,6 +1,6 @@
 import preferences from "@/assests/preferences"
 import Certifications from "@/containers/Certifications/certifications"
-import { certificatesHeader } from "../portfolio"
+import { certificatesHeader } from "../personalInfo"
 
 export default function Certificates({language}) {
     return (

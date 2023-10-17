@@ -3,7 +3,7 @@ import '@/styles/globals.scss'
 import { useEffect, useState } from "react";
 import Perfil from "../containers/Perfil/Perfil"
 import SideMenu from "../containers/SideMenu/SideMenu";
-import { LanguageOptions } from "./portfolio";
+import { LanguageOptions } from "./personalInfo";
 import HeaderBar from "@/components/headerBar/headerBar";
 
 export default function App({ Component, pageProps }) {

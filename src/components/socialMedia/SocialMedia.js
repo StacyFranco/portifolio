@@ -1,4 +1,4 @@
-import { socialMediaLinks } from "@/pages/portfolio"
+import { socialMediaLinks } from "@/pages/personalInfo"
 import Image from "next/image"
 import github from "../../../public/icons/socialMedia/github.svg"
 import linkedin from "../../../public/icons/socialMedia/linkedin.svg"

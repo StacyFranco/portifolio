@@ -292,7 +292,7 @@ const projects = {
       links: [
         {
           name: "Github",
-          url: "https://github.com/StacyFranco/portifolio",
+          url: "https://github.com/StacyFranco/stacyfranco.github.io",
           icon: "github",
         },
         {
