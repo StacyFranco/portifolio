@@ -36,7 +36,7 @@ export default function ProjectCard({
                             ))}
 
                     </div>
-                    <BtnColor1 text={BtnText} click={BtnClick} btnClass={"btnProject"} />
+                    <BtnColor1 text={BtnText} click={BtnClick} btnClass={"BtnProject"} />
                 </div>
             </div>
 

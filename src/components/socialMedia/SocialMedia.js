@@ -17,7 +17,7 @@ const mediaImages = {
 
 export default function SocialMedia({language}) {
     return (
-        <div className="socialMediaDiv">
+        <div className="SocialMediaDiv">
             {
                 Object.keys(socialMediaLinks).map(media => (
                     <a

@@ -1,8 +1,7 @@
-import preferences from "@/assests/preferences"
 import Certifications from "@/containers/Certifications/certifications"
 import { certificatesHeader } from "../../PersonalContent/personalInfo"
 
-export default function Certificates({language}) {
+export default function Certificates({ language }) {
     return (
         <div className="CertificatesPage">
             <div className="TitleDiv">
@@ -11,9 +10,8 @@ export default function Certificates({language}) {
             <div className="TextDiv">
                 <p>{certificatesHeader.content[language]}</p>
             </div>
-             <Certifications language={language} />
-            
+            <Certifications language={language} />
+
         </div>
     )
 }
-//export default preferences(Experience)

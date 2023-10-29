@@ -7,7 +7,7 @@ export default function BtnColor1({
 }){
     return(
         <button
-        className= {`btn ${btnClass}`}
+        className= {`Btn ${btnClass}`}
         onClick={click}
         type={type}
         value={value}

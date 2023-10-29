@@ -23,7 +23,7 @@ export default function SideMenu({ theme, ChangeLanguage, ChangeTheme, language,
 
 
     return (
-        <div className={`SideMenu ${hiden ? "" : "openMenu"}`}>
+        <div className={`SideMenu ${hiden ? "" : "OpenMenu"}`}>
             <div className="MenuDiv">
                 <div
                     className="BtnMenuDiv"
@@ -36,11 +36,11 @@ export default function SideMenu({ theme, ChangeLanguage, ChangeTheme, language,
                     />
                 </div>
             </div>
-            <div className={`MenuContentDiv ${hiden ? "desktop" : ""}`}>
+            <div className={`MenuContentDiv ${hiden ? "Desktop" : ""}`}>
                 <div className={`MenuNavDiv `}>
                     <NavBar hiden={hiden} language={language} />
                 </div>
-                <div className={`configMenu ${hiden ? "desktop" : "openMenu"}`}>
+                <div className={`ConfigMenu ${hiden ? "Desktop" : "OpenMenu"}`}>
                     <ToggleButton
                         LeftText={LanguageOptions[0].toUpperCase()}
                         RightText={LanguageOptions[1].toUpperCase()}

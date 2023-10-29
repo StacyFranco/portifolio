@@ -32,7 +32,7 @@
         align-items: center;
         font-size: 20px;
 
-        .btn{
+        .Btn{
             width: 80%;
             margin-bottom: 10px;
         }
@@ -42,7 +42,7 @@
     
     @media screen and (min-width: $desktopBreakpoint ) {
         
-        .textDiv{
+        .TextDiv{
             display: flex;
             align-items: center;
 
@@ -62,7 +62,7 @@
             justify-content: space-evenly;
             padding-top: 60px;
             
-            .btn{
+            .Btn{
                 width: 40%;
             }
         }

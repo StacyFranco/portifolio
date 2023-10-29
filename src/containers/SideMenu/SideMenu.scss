@@ -8,7 +8,7 @@
     position: fixed;
     right: 0;
 
-    &.openMenu {
+    &.OpenMenu {
         height: 100vh;
         width: 180px;
         .MenuDiv {
@@ -61,14 +61,14 @@
             padding-top: 20px;
             
         
-            &.desktop{
+            &.Desktop{
                 padding-top: 30px;
                 flex: 1;
             }
         }
 
         
-        .configMenu {
+        .ConfigMenu {
             background-color: $backgroundColor2;
             margin-top: auto;
             display: flex;
@@ -76,7 +76,7 @@
             padding: 10px;
             
 
-            &.openMenu {
+            &.OpenMenu {
                 flex-direction: row;
                 justify-content: space-evenly;
             }

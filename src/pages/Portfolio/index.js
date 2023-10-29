@@ -21,12 +21,11 @@ export default function Porfolio({ language }) {
                         projectDescription={project.description[language]}
                         toolIcons={project.tools}
                         BtnText={projectBtn[language]}
-                        BtnClick={()=> window.open(`${project.links[0].url}`)}
-                    />))} 
+                        BtnClick={() => window.open(`${project.links[0].url}`)}
+                    />))}
 
             </div>
 
         </div>
     )
 }
-//export default preferences(Porfolio)

@@ -1,21 +1,21 @@
 @import "../../public/fonts/fonts.scss";
 @import "./variables.scss";
-@import "../components/socialMedia/SocialMedia.scss";
-@import "../components/perfilAvatar/PerfilAvatar.scss";
-@import "../containers/Perfil/Perfil.scss";
+@import "../components/socialMedia/socialMedia.scss";
+@import "../components/perfilAvatar/perfilAvatar.scss";
+@import "../containers/Perfil/perfil.scss";
 @import "../pages/index.scss";
-@import "../components/navBar/NavBar.scss";
-@import "../containers/SideMenu/SideMenu.scss";
-@import "../components/ToggleButton/ToggleButton.scss";
-@import "../components//navBar/NavBarIten.scss";
+@import "../components/navBar/navBar.scss";
+@import "../containers/SideMenu/sideMenu.scss";
+@import "../components/ToggleButton/toggleButton.scss";
+@import "../components//navBar/navBarIten.scss";
 @import "../components/headerBar/headerBar.scss";
 @import "../pages/app";
 @import "../pages/About/about.scss";
 @import "../components/BtnColor1/btnColor1.scss";
 @import "../pages/Contact/contact.scss";
 @import "../components/formIten/formIten.scss";
-@import "../components/projectCard/ToolInten.scss";
-@import "../components/projectCard/ProjectCard.scss";
+@import "../components/projectCard/toolIten.scss";
+@import "../components/projectCard/projectCard.scss";
 @import "../pages/Portfolio/portfolio.scss";
 @import "../pages/Home/home.scss";
 @import "../pages/Certificates/certificates.scss";
@@ -35,7 +35,7 @@ strong {
   font-family: $fontBold;
 }
 
-.desktop {
+.Desktop {
  
 
   @media screen and (max-width: calc($desktopBreakpoint - 1px)) {
@@ -43,7 +43,7 @@ strong {
   }
 }
 
-.mobile {
+.Mobile {
   @media screen and (min-width: $desktopBreakpoint ) {
       display: none !important;
   }

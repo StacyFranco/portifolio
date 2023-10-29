@@ -17,7 +17,7 @@ export default function Perfil({ language }) {
 
         <div className={`PerfilDiv`}>
             <div
-                className={`BtnPerfil mobile ${hiden ? "" : "OpenPerfil"}`}
+                className={`BtnPerfil Mobile ${hiden ? "" : "OpenPerfil"}`}
                 onClick={Perfilclick}
             >
 
@@ -27,7 +27,7 @@ export default function Perfil({ language }) {
                     alt=""
                 />
             </div>
-            <div className={`PerfilContentDiv ${hiden ? "desktop" : ""}`}>
+            <div className={`PerfilContentDiv ${hiden ? "Desktop" : ""}`}>
 
 
                 <div className="PersonalInfo">
@@ -43,9 +43,9 @@ export default function Perfil({ language }) {
                     </div>
                     <div className="AditionalInfo">
                         <span className="Adress"> {PersonalInfo.adress} - {PersonalInfo.country[language]}</span>
-                        <hr className="dividingLine" />
+                        <hr className="DividingLine" />
                         <span className="Copyright">  {PersonalInfo.copyright[language]}</span>
-                        <hr className="dividingLine" />
+                        <hr className="DividingLine" />
                         <div className="SkillsDiv">
                             {
                                 PersonalInfo.skills[language].map(skill =>(
@@ -54,9 +54,9 @@ export default function Perfil({ language }) {
                                 ))
                             }
                         </div>
-                        <div className="btnResumeDiv">
-                            <hr className="dividingLine" />
-                            <button className="btnResume" onClick={()=>window.open(PersonalInfo.resumeLink[language])}>Download {PersonalInfo.resumeName[language]} <div className="DownloadIconDiv">
+                        <div className="BtnResumeDiv">
+                            <hr className="DividingLine" />
+                            <button className="BtnResume" onClick={()=>window.open(PersonalInfo.resumeLink[language])}>Download {PersonalInfo.resumeName[language]} <div className="DownloadIconDiv">
                                 <Image
                                     className="DownloadIcon"
                                     src={download}

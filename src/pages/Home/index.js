@@ -13,11 +13,11 @@ export default function Home({ language }) {
     }
     return (
         <>
-            <div className="HomeDiv desktop">
+            <div className="HomeDiv Desktop">
                     <div className="TitleDiv">
                         <h1>{home.title[language][0]}<strong>{home.title[language][1]}</strong>{home.title[language][2]}</h1>
                     </div>
-                <div className="textDiv">
+                <div className="TextDiv">
                     <div className="ContentDiv">
                         <p>{home.content[language]}</p>
                     <div className="BtnAboutDiv">
@@ -33,7 +33,7 @@ export default function Home({ language }) {
                 </div>
 
             </div>
-            <div className="HomeDiv mobile">
+            <div className="HomeDiv Mobile">
 
                 <div className="TitleDiv">
                     <h1>{home.title[language][0]}<strong>{home.title[language][1]}</strong>{home.title[language][2]}</h1>

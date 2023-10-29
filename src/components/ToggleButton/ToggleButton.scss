@@ -16,12 +16,12 @@
             &:hover+.Slider {
                 box-shadow: 1px 1px 10px $color1;
 
-                .on,
-                .off {
+                .On,
+                .Off {
                     //the way to make this color be observed if the importante
                     color: $textColor1 !important;
 
-                    &.icon {
+                    &.Icon {
                         filter: $filterTextColor1 !important;
                     }
                 }
@@ -32,7 +32,7 @@
             }
 
             &:checked+.Slider {
-                .on {
+                .On {
                     display: block;
                     color: $textColor2;
                     font-size: $fontSize12;
@@ -40,7 +40,7 @@
                     padding-left: 8px;
 
 
-                    &.icon {
+                    &.Icon {
                         display: block;
                         margin-bottom: 5px;
                         height: 10px;
@@ -49,7 +49,7 @@
                     }
                 }
 
-                .off {
+                .Off {
                     display: none;
                     transition: 0.4s;
                 }
@@ -83,18 +83,18 @@
 
             }
 
-            .on {
+            .On {
                 display: none;
             }
 
-            .off {
+            .Off {
                 color: $textColor2;
                 font-size: $fontSize12;
                 font-family: $fontBold;
                 margin-left: auto;
                 padding-right: 8px;
 
-                &.icon {
+                &.Icon {
                     display: block;
                     margin-bottom: 5px;
                     margin-left: auto;

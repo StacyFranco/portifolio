@@ -2,7 +2,7 @@
     padding: 15px;
     
 
-    & .hiden {
+    & .Hiden {
         display: flex;
     justify-content: center;
         span {
@@ -29,7 +29,7 @@
             padding: 0 20px;
             color: $textColor2;
         }
-        &.active{
+        &.Active{
             .NavIcon {
                 filter: $filterTextColor1;
             }
@@ -43,7 +43,7 @@
 
 @media screen and (max-width: $desktopBreakpoint) {
     .NavBarItenDiv {
-        & .hiden {
+        & .Hiden {
             display: none;
         }
     }

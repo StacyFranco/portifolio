@@ -1,12 +1,9 @@
-import preferences from "@/assests/preferences"
 import { contact, socialMediaLinks } from "../../PersonalContent/personalInfo"
-import { useState } from "react"
-import ContactForm from "@/containers/ContactForm/ContactForm"
 import SocialMedia from "@/components/socialMedia/SocialMedia"
 
 
 export default function Contacts({ language }) {
-    
+
     return (
         <div className="ContactPage">
             <div className="TitleDiv">
@@ -21,6 +18,5 @@ export default function Contacts({ language }) {
             </div>
         </div>
     )
-    //<ContactForm  language={language}/>
+  
 }
-// export default preferences(Contacts)

@@ -17,27 +17,27 @@ export default function ToggleButton({
                 <input type='checkbox' className="InputToggle" checked={ButtonChecked}/>
                 <div className="Slider" onClick={toggleClick}>
                     {LeftIcon ?
-                    (<div className="on icon">
+                    (<div className="On Icon">
                         <Image 
                         src={LeftIcon}
                         alt={LeftIconAlt}
                     />
                     </div>
                     ) : (
-                    <span className="on" >
+                    <span className="On" >
                         {LeftText}
                     </span>
                     )
                 }
                 {RightIcon ?
-                (<div className="off icon">
+                (<div className="Off Icon">
                 <Image 
                 src={RightIcon}
                 alt={RightIconAlt}
             />
             </div>
             ) : (
-            <span className="off" >
+            <span className="Off" >
                         {RightText}
                     </span>
                     )
