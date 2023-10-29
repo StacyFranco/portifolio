@@ -30,8 +30,11 @@ export default function ProjectCard({
                 <div className="ProjectCardFooterDiv">
                     <div className="ProjectCardTools">
                         {
-                            toolIcons.map(toolIcon => (
-                                <ToolIten icon={iconTools[toolIcon].src} text={iconTools[toolIcon].alt} />
+                            toolIcons.map((toolIcon,i) => (
+                                <ToolIten
+                                key={i} 
+                                icon={iconTools[toolIcon].src} 
+                                text={iconTools[toolIcon].alt} />
 
                             ))}
 

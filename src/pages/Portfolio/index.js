@@ -15,6 +15,7 @@ export default function Porfolio({ language }) {
             <div className="ProjectsDiv">
                 {projects.data.map(project => (
                     <ProjectCard
+                        key={project.id}
                         ImageUrl={require(`../../../public/images/projects/${project.image.src}`)}
                         ImageAlt={project.image.alt[language]}
                         projectTitle={project.name}

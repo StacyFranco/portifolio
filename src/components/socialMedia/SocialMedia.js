@@ -19,9 +19,10 @@ export default function SocialMedia({language}) {
     return (
         <div className="SocialMediaDiv">
             {
-                Object.keys(socialMediaLinks).map(media => (
+                Object.keys(socialMediaLinks).map((media,i) => (
                     <a
                         href={socialMediaLinks[media]}
+                        key={i}
                         target="_blank">
                         <Image 
                         src={mediaImages[media]}

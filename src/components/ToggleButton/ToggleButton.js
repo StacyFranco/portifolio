@@ -14,7 +14,7 @@ export default function ToggleButton({
     return (
         <div className="ToggleButtonDiv ">
             <label className="Switch">
-                <input type='checkbox' className="InputToggle" checked={ButtonChecked}/>
+                <input type='checkbox' className="InputToggle" checked={ButtonChecked} readOnly/>
                 <div className="Slider" onClick={toggleClick}>
                     {LeftIcon ?
                     (<div className="On Icon">

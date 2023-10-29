@@ -36,8 +36,8 @@ export default function Perfil({ language }) {
                         <span className="Name">
                             {PersonalInfo.firstName} {PersonalInfo.lastName}
                         </span>
-                        {PersonalInfo.title[language].map(title => (
-                            <span className="Title"> {title} </span>
+                        {PersonalInfo.title[language].map((title,i) => (
+                            <span className="Title" key={i}> {title} </span>
                         ))}
 
                     </div>
@@ -48,8 +48,9 @@ export default function Perfil({ language }) {
                         <hr className="DividingLine" />
                         <div className="SkillsDiv">
                             {
-                                PersonalInfo.skills[language].map(skill =>(
-                                    <p className="Skills">{skill}</p>
+                                PersonalInfo.skills[language].map((skill,i) =>(
+                                    
+                                    <p className="Skills" key={i} >{skill}</p>
 
                                 ))
                             }
