@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
     const [CurrentLanguage, setCurrentLanguage] = useState(null);
     const [ThemeChange, setThemeChange] = useState(false);
     const [LanguageChange, setLanguageChange] = useState(false);
-
+    let count =0;
     useEffect(() => {
         const newTheme = localStorage.getItem('theme');
         if (newTheme !== null) {
@@ -53,7 +53,8 @@ export default function App({ Component, pageProps }) {
         setThemeChange(!ThemeChange)
     }
 
-    while (CurrentTheme == null && ChangeLanguage == null) { };
+    while (CurrentTheme == null && ChangeLanguage == null) { 
+        localStorage.setItem('count', count++) };
 
     return (
 
