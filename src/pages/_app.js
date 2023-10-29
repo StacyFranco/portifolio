@@ -8,16 +8,11 @@ import HeaderBar from "@/components/headerBar/headerBar";
 
 export default function App({ Component, pageProps }) {
     const [CurrentTheme, setCurrentTheme] = useState(null);
-    const [Language, setLanguage] = useState(null);
+    const [CurrentLanguage, setCurrentLanguage] = useState(null);
     const [ThemeChange, setThemeChange] = useState(false);
     const [LanguageChange, setLanguageChange] = useState(false);
-    let useNewEffect=false;
+
     useEffect(() => {
-        /*
-        if (localStorage.getItem('theme') == null) {
-          setCurrentTheme(preferdTheme);
-          localStorage.setItem('theme', preferdTheme);
-        } else {*/
         const newTheme = localStorage.getItem('theme');
         if (newTheme !== null) {
             setCurrentTheme(newTheme)
@@ -27,22 +22,22 @@ export default function App({ Component, pageProps }) {
             localStorage.setItem('theme', preferdTheme)
             setCurrentTheme(preferdTheme)
         }
-    }, [ThemeChange,useNewEffect]);
+    }, [ThemeChange]);
 
     useEffect(() => {
         const newLanguage = localStorage.getItem('language');
         if (newLanguage !== null) {
-            setLanguage(newLanguage)
+            setCurrentLanguage(newLanguage)
         } else {
             localStorage.setItem('language', LanguageOptions[0])
         }
-    }, [LanguageChange,useNewEffect]);
+    }, [LanguageChange]);
 
 
 
 
     const ChangeLanguage = () => {
-        if (Language === LanguageOptions[0]) {
+        if (CurrentLanguage === LanguageOptions[0]) {
             localStorage.setItem('language', LanguageOptions[1]);
             setLanguageChange(!LanguageChange);
         } else {
@@ -57,32 +52,30 @@ export default function App({ Component, pageProps }) {
         localStorage.setItem('theme', setedTheme === "light" ? "dark" : "light")
         setThemeChange(!ThemeChange)
     }
-    if(CurrentTheme && Language ){
 
-        return (
-            
-            //(CurrentTheme && (
-//Language && (
-                    <>
-                        <div lang='en' className={` MainDiv ${CurrentTheme}`}>
-                            <Perfil language={Language} />
-                            <div className="BodyDiv" >
-                                <HeaderBar language={Language} />
-                                <Component  {...pageProps} theme={CurrentTheme} language={Language} />
-                            </div>
-                            <SideMenu theme={CurrentTheme} ChangeTheme={ChangeTheme} ChangeLanguage={ChangeLanguage} language={Language} LangBtnChecked={Language !== LanguageOptions[0]} />
-    
-                        </div >
-                    </>
-    
-               // )
-                
-           // ))
-    
-    
-        );
-    }else{
-        useNewEffect=!useNewEffect;
-    }
-    //return <Component {...pageProps} />
+    while (CurrentTheme == null && ChangeLanguage == null) { };
+
+    return (
+
+        (CurrentTheme && (
+            CurrentLanguage && (
+                <>
+                    <div lang={`${CurrentLanguage}`} className={` MainDiv ${CurrentTheme}`}>
+                        <Perfil language={CurrentLanguage} />
+                        <div className="BodyDiv" >
+                            <HeaderBar language={CurrentLanguage} />
+                            <Component  {...pageProps} theme={CurrentTheme} language={CurrentLanguage} />
+                        </div>
+                        <SideMenu theme={CurrentTheme} ChangeTheme={ChangeTheme} ChangeLanguage={ChangeLanguage} language={CurrentLanguage} LangBtnChecked={CurrentLanguage !== LanguageOptions[0]} />
+
+                    </div >
+                </>
+
+            )
+
+        ))
+
+
+    );
+
 }
