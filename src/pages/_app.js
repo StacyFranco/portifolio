@@ -57,8 +57,10 @@ export default function App({ Component, pageProps }) {
     if(CurrentTheme == null && CurrentLanguage == null) { 
         console.log('CurrentTheme', CurrentTheme);
         console.log('CurrentLanguage',CurrentLanguage);
-       // SetNewChange(!NewChange)
-     };
+        
+     }else{
+        SetNewChange(true);
+     }
 
     return (
 
