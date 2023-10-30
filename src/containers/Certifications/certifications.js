@@ -10,7 +10,7 @@ export default function Certifications({ language }) {
                     CertImageTitle={cert.image.alt[language]}
                     CertImageUrl={require(`../../../public/images/certifications/${cert.image.src}`)}
                     CertTitle={cert.title[language]}
-                    CertText={cert.content[language]}
+                    CertText={`${cert.content[language]}`}
                     CertClick={() => window.open(cert.url)}
 
                 />

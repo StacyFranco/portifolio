@@ -61,6 +61,7 @@ export default function Perfil({ language }) {
                                 <Image
                                     className="DownloadIcon"
                                     src={download}
+                                    alt="download"
                                 /></div>
                             </button>
                         </div>

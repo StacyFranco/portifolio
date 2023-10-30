@@ -17,7 +17,7 @@ export default function Porfolio({ language }) {
                     <ProjectCard
                         key={project.id}
                         ImageUrl={require(`../../../public/images/projects/${project.image.src}`)}
-                        ImageAlt={project.image.alt[language]}
+                        ImageAlt={`${project.image.alt[language]}`}
                         projectTitle={project.name}
                         projectDescription={project.description[language]}
                         toolIcons={project.tools}
