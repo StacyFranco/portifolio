@@ -11,9 +11,7 @@ export default function App({ Component, pageProps }) {
     const [CurrentLanguage, setCurrentLanguage] = useState(null);
     const [ThemeChange, setThemeChange] = useState(false);
     const [LanguageChange, setLanguageChange] = useState(false);
-    //const [NewChange,SetNewChange] = useState(false);
-    let NewChange =false;
-    
+
     useEffect(() => {
         const newTheme = localStorage.getItem('theme');
         if (newTheme !== null) {
@@ -24,7 +22,7 @@ export default function App({ Component, pageProps }) {
             localStorage.setItem('theme', preferdTheme)
             setCurrentTheme(preferdTheme)
         }
-    }, [ThemeChange, NewChange]);
+    }, [ThemeChange]);
 
     useEffect(() => {
         const newLanguage = localStorage.getItem('language');
@@ -34,7 +32,7 @@ export default function App({ Component, pageProps }) {
             localStorage.setItem('language', LanguageOptions[0])
             setCurrentLanguage(LanguageOptions[0])
         }
-    }, [LanguageChange, NewChange]);
+    }, [LanguageChange]);
 
 
 
@@ -56,24 +54,11 @@ export default function App({ Component, pageProps }) {
         setThemeChange(!ThemeChange)
     }
 
-   
-    if(CurrentTheme == null && CurrentLanguage == null) { 
-        console.log('CurrentTheme', CurrentTheme);
-        console.log('CurrentLanguage',CurrentLanguage);
-        
-     }
-    
-    
-
     return (
 
         (CurrentTheme && (
             CurrentLanguage && (
-                
                 <>
-                {console.log('CurrentTheme', CurrentTheme)}
-                 {console.log('CurrentLanguage',CurrentLanguage)}
-
                     <div lang={`${CurrentLanguage}`} className={` MainDiv ${CurrentTheme}`}>
                         <Perfil language={CurrentLanguage} />
                         <div className="BodyDiv" >
@@ -84,12 +69,7 @@ export default function App({ Component, pageProps }) {
 
                     </div >
                 </>
-
             )
-
         ))
-
-
     );
-
 }

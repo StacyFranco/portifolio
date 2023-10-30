@@ -1,6 +1,6 @@
 import css from "./css.svg"
 import html from "./html.svg"
-import java from "./java.svg"
+import javascript from "./javascript.svg"
 import mongo from "./mongo.svg"
 import next from "./next.svg"
 import node from "./node.svg"
@@ -19,8 +19,8 @@ const iconTools = {
         src : html,
         alt : "HTML"
     },
-    java:{
-        src : java,
+    javascript:{
+        src : javascript,
         alt : "JavaScript"
     },
     mongo:{

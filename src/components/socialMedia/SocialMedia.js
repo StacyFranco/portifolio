@@ -26,8 +26,8 @@ export default function SocialMedia({language}) {
                         target="_blank">
                         <Image 
                         src={mediaImages[media]}
-                        alt= {language ==="pt" ? `ícone do ${media}` : `icon of ${media}`} 
-                        className= {`mediaIcon`} />
+                        alt= { `${mediaImages[media]}`} 
+                        className= {`MediaIcon`} />
                         
                     </a>
                 ))

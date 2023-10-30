@@ -10,7 +10,7 @@ export default function PerfilAvatar({language}) {
             <div className="ImageAvatarDiv">
                 <Image
                     className="Avatar"
-                    alt={language==="pt" ? "Foto Perfil" : "Perfil Photo"}
+                    alt={PersonalInfo.avatarAlt[language]}
                     layout="fill"
                     src={require(`../../../public/images/${PersonalInfo.avatarPath}`)}
                 />

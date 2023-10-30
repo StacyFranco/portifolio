@@ -15,9 +15,13 @@ const PersonalInfo = {
   age: "31",
   //Put the name of the image with the extension in the avatarPath and Save your image on the paste: /public/images/
   avatarPath: "Stacy.png",
+  avatarAlt:{
+    en: "Personal Photo",
+    pt: " Foto Pessoal"
+  },
   title: {
     en: ["Full Stack Programmer", "Web Developer"],
-    pt: ["Programador Full Stack", "Desenvolvedor Web"],
+    pt: ["Programadora Full Stack", "Desenvolvedora Web"],
   },
   resumeLink:{
     en: "",
@@ -40,13 +44,13 @@ const PersonalInfo = {
     en: [
       "⚡ Frontend with React.js",
       "⚡ Backend with Node.js",
-      "⚡ Sass,Postman,Next.js",
+      "⚡ Sass, Postman, Next.js",
       "⚡ GIT knowledge",
   ],
     pt: [
-      "⚡Frontend com React.js",
-      "⚡Backend com Node.js",
-      "⚡Sass,Postman,Next.js",
+      "⚡ Frontend com React.js",
+      "⚡ Backend com Node.js",
+      "⚡ Sass, Postman, Next.js",
       "⚡ Conhecimento em GIT",
     ]
   }
@@ -252,7 +256,7 @@ const projects = {
         en: "This project creates a social network emulating the features of Instagram. It was developed alongside Node and React classes. This project was created in Portuguese ",
         pt: "Esse projeto consiste na criação de uma rede social emulando as funcionalidades do Instagram. Ele foi desenvolvido junto as aulas de Node e React.Esse projeto foi criado em português"
       },
-      tools: ["sass", "mongo", "java", "node", "react", "next"],
+      tools: ["sass", "mongo", "javascript", "node", "react", "next"],
 
       links: [
         {
@@ -287,7 +291,7 @@ const projects = {
         en: "This project creates a portfolio web page. It was developed with React and Sass using Next. It was made so that it could be personalized by whoever uses the application. This Project was created in english but has support for portuguese language",
         pt: "Este projeto cria uma página web de um portifólio. Foi desenvolvido com React e Sass usando o Next. Foi feito para que pudesse ser personalizado por quem usa a aplicação. Esse projeto foi criado em inglês com opção de visualização em português também."
       },
-      tools: ["sass", "java", "react", "next"],
+      tools: ["sass", "javascript", "react", "next"],
 
       links: [
         {
@@ -318,7 +322,7 @@ const projects = {
         en: "Design of a page made in React to create a playlist for Spotify. This project was created in  english",
         pt: "Projeto de uma pagina feita em  react para criação de playlist para o spotify. Esse projeto foi criado em inglês"
       },
-      tools: ["css", "java", "react"],
+      tools: ["css", "javascript", "react"],
  
       links: [
         {

@@ -28,7 +28,10 @@ export default function Home({ language }) {
                 <div className="ImageDiv">
                     <Image
                         layout="fill"
-                        src={require(`../../../public/images/${PersonalInfo.avatarPath}`)} />
+                        src={require(`../../../public/images/${PersonalInfo.avatarPath}`)} 
+                        alt={`${PersonalInfo.avatarAlt[language]}`}
+                        />
+                        
                 </div>
                 </div>
 

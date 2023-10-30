@@ -24,7 +24,7 @@ export default function Perfil({ language }) {
                 <Image
                     className="PerfilIcon"
                     src={hiden ? user : close}
-                    alt=""
+                    alt={hiden ? 'user' : 'close'}
                 />
             </div>
             <div className={`PerfilContentDiv ${hiden ? "Desktop" : ""}`}>

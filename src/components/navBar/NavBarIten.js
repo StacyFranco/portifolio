@@ -3,6 +3,7 @@ import Image from "next/image"
 
 export default function NavBarIten({
     icon,
+    iconAlt,
     text,
     hiden,
     onClick,
@@ -17,6 +18,7 @@ export default function NavBarIten({
                 <Image
                     className="NavIcon"
                     src={icon}
+                    alt={iconAlt}
                 />
                 <span>{text}</span>
             </div>

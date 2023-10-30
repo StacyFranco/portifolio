@@ -32,7 +32,7 @@ export default function SideMenu({ theme, ChangeLanguage, ChangeTheme, language,
                     <Image
                         className="MenuIcon"
                         src={hiden ? menu : close}
-                        alt=""
+                        alt={hiden ? "menu" : "close"}
                     />
                 </div>
             </div>
