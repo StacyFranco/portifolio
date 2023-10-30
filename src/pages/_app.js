@@ -58,8 +58,6 @@ export default function App({ Component, pageProps }) {
         console.log('CurrentTheme', CurrentTheme);
         console.log('CurrentLanguage',CurrentLanguage);
         
-     }else{
-        SetNewChange(true);
      }
 
     return (
