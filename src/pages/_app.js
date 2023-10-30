@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }) {
     const [LanguageChange, setLanguageChange] = useState(false);
     //const [NewChange,SetNewChange] = useState(false);
     let NewChange =false;
+    
     useEffect(() => {
         const newTheme = localStorage.getItem('theme');
         if (newTheme !== null) {
@@ -31,6 +32,7 @@ export default function App({ Component, pageProps }) {
             setCurrentLanguage(newLanguage)
         } else {
             localStorage.setItem('language', LanguageOptions[0])
+            setCurrentLanguage(LanguageOptions[0])
         }
     }, [LanguageChange, NewChange]);
 
@@ -54,12 +56,14 @@ export default function App({ Component, pageProps }) {
         setThemeChange(!ThemeChange)
     }
 
+   
     if(CurrentTheme == null && CurrentLanguage == null) { 
         console.log('CurrentTheme', CurrentTheme);
         console.log('CurrentLanguage',CurrentLanguage);
         
      }
-     NewChange=true;
+    
+    
 
     return (
 
