@@ -11,8 +11,8 @@ export default function App({ Component, pageProps }) {
     const [CurrentLanguage, setCurrentLanguage] = useState(null);
     const [ThemeChange, setThemeChange] = useState(false);
     const [LanguageChange, setLanguageChange] = useState(false);
-    const [NewChange,SetNewChange] = useState(false);
-    
+    //const [NewChange,SetNewChange] = useState(false);
+    let NewChange =false;
     useEffect(() => {
         const newTheme = localStorage.getItem('theme');
         if (newTheme !== null) {
@@ -59,7 +59,7 @@ export default function App({ Component, pageProps }) {
         console.log('CurrentLanguage',CurrentLanguage);
         
      }
-     SetNewChange(true)
+     NewChange=true;
 
     return (
 
