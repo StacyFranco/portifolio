@@ -59,6 +59,7 @@ export default function App({ Component, pageProps }) {
         console.log('CurrentLanguage',CurrentLanguage);
         
      }
+     SetNewChange(true)
 
     return (
 
