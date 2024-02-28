@@ -42,14 +42,14 @@ const PersonalInfo = {
   },
   skills: {
     en: [
-      "⚡ Frontend with React.js",
-      "⚡ Backend with Node.js",
+      "⚡ React.js ➞ Next.js and Vite",
+      "⚡ Node.js ➞ Next.js and Nest.js",
       "⚡ Sass, Postman, Next.js",
       "⚡ GIT knowledge",
   ],
     pt: [
-      "⚡ Frontend com React.js",
-      "⚡ Backend com Node.js",
+      "⚡ React.js ➞ Next.js e Vite",
+      "⚡ Node.js ➞ Next.js e Nest.js",
       "⚡ Sass, Postman, Next.js",
       "⚡ Conhecimento em GIT",
     ]
@@ -200,7 +200,7 @@ const certificates = {
         pt: "Node Básico"
       },
       content: {
-        en: "Deveria’s Introduction to Node Course",
+        en: "Devaria’s Introduction to Node Course",
         pt: "Curso de introdução ao Node da Devaria"
       }
     },
@@ -219,7 +219,7 @@ const certificates = {
         pt: "Introdução ao React.js"
       },
       content: {
-        en: "Deveria’s introduction to React course",
+        en: "Devaria’s introduction to React course",
         pt: "Curso de Introdução ao React.js da Devaria"
       }
     },
