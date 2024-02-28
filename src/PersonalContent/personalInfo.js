@@ -77,6 +77,7 @@ const NavBarNames = {
 };
 
 
+
 // Page Home
 const home = {
   title: {
@@ -112,6 +113,7 @@ const about = {
     pt: ["Veja meus projetos", "Entre em Contato"]
   }
 }
+
 
 //Page Contact
 const contact = {
@@ -166,7 +168,7 @@ const certificates = {
   data: [
     {
       id: "0",
-      url:"https://drive.google.com/file/d/1P9xwkSlYnnmixn9h8Ueknjn-mfDgzvfc/view?usp=drive_link",
+      url:"https://app.devaria.com.br/conquistas/18/532c4248b49e4682a2a678186ac1bbe8",
       image: {
         src: "ModulosBasicos.svg",
         alt: {
@@ -179,13 +181,13 @@ const certificates = {
         pt: "Módulos Básicos"
       },
       content: {
-        en: "Devaria Basic Curse",
+        en: "Devaria’s Basic Curse",
         pt: "Curso Básico Devaria"
       }
     },
     {
       id: "1",
-      url: "https://drive.google.com/file/d/1tBtRRWQrCRtJRFSmXnwKOXiKQbblmGlO/view?usp=drive_link",
+      url: "https://app.devaria.com.br/conquistas/16/22074b78a735461bb9650f3d16d0dca5",
       image: {
         src: "NodeBasico.svg",
         alt: {
@@ -198,13 +200,13 @@ const certificates = {
         pt: "Node Básico"
       },
       content: {
-        en: "Devaria Basic Node Curse",
-        pt: "Curso Básico de Node da Devaria"
+        en: "Deveria’s Introduction to Node Course",
+        pt: "Curso de introdução ao Node da Devaria"
       }
     },
     {
       id: "2",
-      url:"https://drive.google.com/file/d/1rbvJPjEV0V3Tgok4xrD8Hdyz6ym1VaAu/view?usp=drive_link",
+      url:"https://app.devaria.com.br/conquistas/25/f61fa0f992b94905a98fd795792d05a7",
       image: {
         src: "ReactBasico.svg",
         alt: {
@@ -213,15 +215,52 @@ const certificates = {
         }
       },
       title: {
-        en: "Basic React",
-        pt: "React Básico"
+        en: "Introduction to React.js",
+        pt: "Introdução ao React.js"
       },
       content: {
-        en: "Devaria Basic React Curse",
-        pt: "Curso Básico de React da Devaria"
+        en: "Deveria’s introduction to React course",
+        pt: "Curso de Introdução ao React.js da Devaria"
       }
     },
-
+    {
+      id: "3",
+      url: "https://app.devaria.com.br/conquistas/15/ccc270a5dcb940ba8ea34278f2ff09b8",
+      image: {
+        src: "NodeAvancado.svg",
+        alt: {
+          en: "Certificate Icon",
+          pt: "Ícone do certificado"
+        }
+      },
+      title: {
+        en: "Advanced Node",
+        pt: "Node Avançado"
+      },
+      content: {
+        en: "Devaria’s Advanced Node Curse",
+        pt: "Curso Avançado de Node da Devaria"
+      }
+    },
+    {
+      id: "4",
+      url:"https://app.devaria.com.br/conquistas/26/bcb3cf9b12424443b15039a63a30614d",
+      image: {
+        src: "ReactAvancado.svg",
+        alt: {
+          en: "Certificate Icon",
+          pt: "Ícone do certificado"
+        }
+      },
+      title: {
+        en: "Advanced React",
+        pt: "React Avançado"
+      },
+      content: {
+        en: "Devaria’s Advanced React Curse",
+        pt: "Curso Avançado de React da Devaria"
+      }
+    },
   ]
 }
 
